@@ -3,75 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Oso Interactivo</title>
+    <title>The Bear - Experience</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <style>
-        
-
-        
-        .masthead {
-            position: relative;
-            height: 600px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden; 
-        }
-
-        .masthead::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg');
-            background-size: cover;
-            background-position: center;
-            z-index: -1; 
-            animation: slowZoom 25s infinite alternate ease-in-out; 
-        }
-
-        
-        @keyframes slowZoom {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.15); }
-        }
-
-        
-        .interactive-box {
-           
-            
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
-            
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            
-            border: 2px solid rgba(255, 255, 255, 0.5) !important;
-        }
-
-        .interactive-box:hover {
-            transform: translateY(-8px) scale(1.02); 
-            box-shadow: 0 20px 30px rgba(0,0,0,0.2); 
-            background-color: rgba(255, 255, 255, 0.85) !important; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="masthead text-center text-dark">
-    
     <div class="container px-4">
         <div class="row justify-content-center">
-            <div class="opacity-75"> 
-            <div class="col-lg-12">
-                <div class="p-3 mb-2 bg-white bg-opacity-75 border border-white rounded interactive-box">
+            <div class="col-lg-8"> 
+                <div class="p-4 mb-3 bg-white bg-opacity-75 rounded interactive-box">
                     <h1 class="display-1 fw-bolder text-dark m-0">THE BEAR</h1>
                 </div>
 
-                <div class="p-3 bg-white bg-opacity-75 border border-white rounded interactive-box">
-                    <h2 class="display-6 mt-0 text-dark m-0">Bienvenidos a una experiencia unica</h2>
+                <div class="p-3 bg-white bg-opacity-75 rounded interactive-box">
+                    <h2 class="display-6 mt-0 text-dark m-0">Bienvenidos a una experiencia única</h2>
                 </div>
             </div>
-            </div>
-            
         </div>
     </div>
 </header>
