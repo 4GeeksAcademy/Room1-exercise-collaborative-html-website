@@ -1,5 +1,6 @@
 // js source http://codepen.io/moklick/pen/zKleC  
 
+// Este script crea un efecto de parpadeo en el canvas.
 var Application = ( function () {
         var canvas;
         var ctx;
