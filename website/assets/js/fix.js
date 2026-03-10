@@ -12,18 +12,13 @@ for (var i = 0, len = links.length; i < len; i++) {
 	  // Click events are captured before hashchanges. Timeout
 	  // causes offsetAnchor to be called after the page jump.
 	  window.setTimeout(function() {
-	    offsetAnchor();
+		offsetAnchor();
 	  }, 0);
 	});
 }
 
 // Set the offset when entering page with hash present in the url
 window.setTimeout(offsetAnchor, 0);
-
-/*
-NOW WE NEED TO FIX THE NAVBAR TO MAKE IT WORK ON MOBILE WITHOUT JQUERY
- */
-
 
 // Navbar and dropdowns
 var toggle = document.getElementsByClassName('navbar-toggle')[0],
